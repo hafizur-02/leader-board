@@ -120,5 +120,39 @@ hr {
     align-items: center;
     justify-content: space-between;
 }
+/* -----------------
+ Media Queries
+------------------- */
+@media only screen  and (max-width:480px) {
+   
+    .container {
+        width:100%;
+        background-color:salmon;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:20px
+    }
+    .blog {
+        flex-direction: column;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:20px;
+    }
+    .courses {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}
 
 
